@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+
+<body onload="checkURL(); prepareDeck();">
+<header>
+
+    <div class="logo header-left"></div>
+    <div class="guide-button header-left" onClick="openIt(document.getElementById('guide-container')); openIt(document.getElementById('whiteout'))">Instructions</div>
+<div class="guide-button header-right" ><span onClick="startStopTimer();" id="play-pause">⏵︎</span><span id="timer" onkeyup="timerCheck();" class="inline" contenteditable="true">1:30</span></div>
+</header>
+
+	
+<div id="game-container">
+	
+<div id="flipper" onclick="flipOnOff();">
+  <div class="flip-card" id="card-a">
+    <div class="flip-card-inner">
+      <div class="flip-card-front gradient-blue" id="card-front-a">
+        <div class="container">
+          <div class="center">
+            <h1>Q1</h1>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card-back" id="card-back-a">
+        <div class="container">
+          <div class="center">
+            <h2 id="question-a-container"></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card" id="card-b">
+    <div class="flip-card-inner">
+      <div class="flip-card-front gradient-blue" id="card-front-b">
+        <div class="container">
+          <div class="center">
+            <h1>Q2</h1>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card-back" id="card-back-b">
+        <div class="container">
+          <div class="center">
+            <h2 id="question-b-container" class="hidden"></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+	<div id="whiteout" class="open"></div>
+	
+	
+	<div id="guide-container" class="open" onClick="unopenIt(document.getElementById('guide-container'));unopenIt(document.getElementById('whiteout'));">
+		<div class="x-button">X</div>
+	<h2>GETTING TO KNOW EACH OTHER</h2>
+		<p>The goal of this exercise is to meet people you haven’t met yet, and get to know them a little better in 3 easy steps:</p>
+		<p>1. Once you are paired with someone. Click the cards to reveal your two question options.</p>
+		<p>2. Ask you partner one of the two questions on your card.</p>
+		<p>3. Answer one of the two questions on their card. </p>
+		<p>Try to do this in less than one minute! There is a timer to help you keep track of time.</p>
+		<h2>TOP TIPS</h2>
+		<p>Be flexible: adapt your question if you notice it’s difficult to answer.</p>
+		<p>Pay attention to the time limit (60’’), so that you talk to as many people as possible.</p>			
+</div>
+</body>
+</html>
