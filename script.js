@@ -1,7 +1,7 @@
 // JavaScript Document
-
+/*
 var x; var y="bGl2ZWxlYXJubGVhcA=="; x=prompt(atob("RW50ZXIgUGFzc3dvcmQ="),' '); if (x==atob(y)) alert(atob("Q29ycmVjdCBQYXNzd29yZCEgQ2xpY2sgT0sgdG8gRW50ZXIh")); else { window.location=atob("aHR0cDovL3ZsZXJpY2suY29tLw=="); } 
-
+*/
 var currentQuestion = 0;
 var isflipped = 0;
 
